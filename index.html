@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Channel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo">
+                <img src="logo-social.png" class="company-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-items" id="ipl" onclick="clickNavItem(`ipl`)">IPL</li>
+                    <li class="nav-items" id="finance" onclick="clickNavItem(`finance`)">Finance</li>
+                    <li class="nav-items" id="politics" onclick="clickNavItem(`politics`)">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="news-input" placeholder="e.g Science">
+                <button class="btn-search" id="search-btn"><img src="search.png"></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h5 class="news-source" id="news-source">End Gadget 14/10/2023</h5>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem
+                    voluptates quidem nisi molestias dolorum in sint, eum porro ipsum!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
